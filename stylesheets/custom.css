@@ -1,4 +1,4 @@
-/* HearAdvisor brand colors: purple #7937CE, light purple #DABEFF, pink accent */
+/* HearAdvisor brand colors: purple #7937CE, light purple #DABEFF */
 
 /* Light mode */
 [data-md-color-scheme="default"] {
@@ -36,48 +36,23 @@
   color: #DABEFF;
 }
 
-/* Version badge styling */
-.md-typeset .version-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5em;
-  padding: 0.3em 0.8em;
-  border-radius: 4px;
-  font-size: 0.75em;
-  font-weight: 600;
-  margin-bottom: 1em;
+/* Page git info bar at the top of content */
+.page-git-info {
+  margin-bottom: 0.5em;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  opacity: 0.7;
 }
 
-.md-typeset .version-badge.current {
-  background: #e8f5e9;
-  color: #2e7d32;
-  border: 1px solid #a5d6a7;
+.page-git-info small {
+  font-size: 0.7rem;
 }
 
-.md-typeset .version-badge.updated {
-  background: #fff3e0;
-  color: #e65100;
-  border: 1px solid #ffcc80;
+.page-git-info a {
+  color: var(--md-typeset-a-color);
+  text-decoration: none;
 }
 
-[data-md-color-scheme="slate"] .version-badge.current {
-  background: #1b3d1f;
-  color: #81c784;
-  border-color: #2e7d32;
-}
-
-[data-md-color-scheme="slate"] .version-badge.updated {
-  background: #3e2723;
-  color: #ffb74d;
-  border-color: #e65100;
-}
-
-/* Score impact callout */
-.md-typeset .admonition.scores-affected,
-.md-typeset details.scores-affected {
-  border-color: #e65100;
-}
-.md-typeset .scores-affected > .admonition-title,
-.md-typeset .scores-affected > summary {
-  background-color: rgba(230, 81, 0, 0.1);
+.page-git-info a:hover {
+  text-decoration: underline;
 }

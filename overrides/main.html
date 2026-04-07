@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {% if page and page.meta and not (page.meta.hide_git_info) %}
+    {% if page.meta.git_revision_date_localized %}
+    <div class="page-git-info">
+      <small>
+        Last updated: {{ page.meta.git_revision_date_localized }}
+        &middot;
+        <a href="https://github.com/asabin/hearadvisor-methods/commits/main/docs/{{ page.file.src_path }}">
+          View page history
+        </a>
+      </small>
+    </div>
+    {% endif %}
+  {% endif %}
+  {{ super() }}
+{% endblock %}

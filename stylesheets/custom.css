@@ -9,6 +9,7 @@
   --md-primary-bg-color--light: #ffffff;
   --md-accent-fg-color: #9B6BD6;
   --md-typeset-a-color: #7937CE;
+  --md-default-bg-color: #f9f4ff;
 }
 
 /* Dark mode */
@@ -20,10 +21,11 @@
   --md-typeset-a-color: #DABEFF;
 }
 
-/* Header - light lavender from hearadvisor.com */
+/* Header - white toolbar with purple text */
 .md-header {
-  background: #f9f4ff;
+  background: #ffffff;
   color: #7937CE;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .md-header .md-header__title {
@@ -38,6 +40,7 @@
 [data-md-color-scheme="slate"] .md-header {
   background: #1a1025;
   color: #DABEFF;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 [data-md-color-scheme="slate"] .md-header .md-header__title,

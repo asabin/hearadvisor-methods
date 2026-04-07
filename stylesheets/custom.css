@@ -9,7 +9,6 @@
   --md-primary-bg-color--light: #ffffff;
   --md-accent-fg-color: #9B6BD6;
   --md-typeset-a-color: #7937CE;
-  --md-default-bg-color: #f9f4ff;
 }
 
 /* Dark mode */
@@ -19,13 +18,32 @@
   --md-primary-fg-color--dark: #7937CE;
   --md-accent-fg-color: #DABEFF;
   --md-typeset-a-color: #DABEFF;
-  --md-default-bg-color: #1a1025;
-  --md-default-bg-color--light: #211333;
 }
 
-/* Header gradient to match hearadvisor.com */
+/* Header - light lavender from hearadvisor.com */
 .md-header {
-  background: linear-gradient(135deg, #7937CE, #9B6BD6);
+  background: #f9f4ff;
+  color: #7937CE;
+}
+
+.md-header .md-header__title {
+  color: #7937CE;
+}
+
+.md-header .md-header__button,
+.md-header .md-search__icon {
+  color: #7937CE;
+}
+
+[data-md-color-scheme="slate"] .md-header {
+  background: #1a1025;
+  color: #DABEFF;
+}
+
+[data-md-color-scheme="slate"] .md-header .md-header__title,
+[data-md-color-scheme="slate"] .md-header .md-header__button,
+[data-md-color-scheme="slate"] .md-header .md-search__icon {
+  color: #DABEFF;
 }
 
 /* Tabs and navigation active states */

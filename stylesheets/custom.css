@@ -21,20 +21,20 @@
   --md-typeset-a-color: #DABEFF;
 }
 
-/* Header - white toolbar with purple text */
+/* Header - white toolbar with black text */
 .md-header {
   background: #ffffff;
-  color: #7937CE;
+  color: #1a1a1a;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .md-header .md-header__title {
-  color: #7937CE;
+  color: #1a1a1a;
 }
 
 .md-header .md-header__button,
 .md-header .md-search__icon {
-  color: #7937CE;
+  color: #1a1a1a;
 }
 
 [data-md-color-scheme="slate"] .md-header {

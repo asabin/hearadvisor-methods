@@ -1371,7 +1371,7 @@
     
     <div class="page-git-info">
       <small>
-        Last updated: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 7, 2026 18:53:25 UTC">April 7, 2026</span>
+        Last updated: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 7, 2026 20:23:58 UTC">April 7, 2026</span>
         &middot;
         <a href="https://github.com/asabin/hearadvisor-methods/commits/main/docs/hearing-devices/metrics/soundscore.md">
           View page history
@@ -1403,39 +1403,46 @@
 </ol>
 <h2 id="step-1-per-fit-score-component-weights">Step 1: Per-Fit Score (Component Weights)<a class="headerlink" href="#step-1-per-fit-score-component-weights" title="Permanent link">&para;</a></h2>
 <p>The per-fit score is a weighted average across all 5 component metrics. The weights were derived from a custom survey of hearing aid consumers (n = 107) and hearing care professionals (n = 95). Each participant ranked the relative importance of our 5 metrics on a 0 to 4 scale (higher is better).</p>
-<p><img alt="Rated importance of component dimensions" src="../../assets/table2-rated-importance-dimensions.png" /></p>
-<p><em>Table 2. Rated importance of each component dimension. (Top Two Rows) Group average rated importance from 0 (lowest) to 4 (highest). (Bottom Row) Two-group average importance, normalized to sum to 1. These are the values used to compute the per-fit score.</em></p>
-<p>The ranks show reasonably nice agreement across groups, indicating that this weighting is largely replicable. We combined the two groups to create an overall average importance rating. The normalized values are:</p>
+<p><em>Table 2. Rated importance of each component dimension.</em> Group average rated importance from 0 (lowest) to 4 (highest). Bottom row: two-group average, normalized to sum to 1.</p>
 <table>
 <thead>
 <tr>
-<th>Component</th>
-<th>Weight</th>
+<th></th>
+<th>Speech Benefit (Quiet/Mod)</th>
+<th>Speech Benefit (Noisy)</th>
+<th>Own Voice Not Boomy</th>
+<th>Does Not Squeal</th>
+<th>Streaming Music Quality</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Speech Benefit in Quiet/Moderate</td>
-<td>0.34</td>
+<td><strong>Consumers</strong> Avg Rank</td>
+<td>3.2</td>
+<td>3.1</td>
+<td>1.1</td>
+<td>1.3</td>
+<td>1.3</td>
 </tr>
 <tr>
-<td>Speech Benefit in Noise</td>
-<td>0.29</td>
+<td><strong>HCPs</strong> Avg Rank</td>
+<td>3.5</td>
+<td>2.7</td>
+<td>1.4</td>
+<td>1.7</td>
+<td>0.7</td>
 </tr>
 <tr>
-<td>Own Voice Not Boomy</td>
-<td>0.12</td>
-</tr>
-<tr>
-<td>Does Not Squeal</td>
-<td>0.15</td>
-</tr>
-<tr>
-<td>Streaming Music Quality</td>
-<td>0.10</td>
+<td><strong>Combined</strong> Normalized</td>
+<td><strong>0.34</strong></td>
+<td><strong>0.29</strong></td>
+<td><strong>0.12</strong></td>
+<td><strong>0.15</strong></td>
+<td><strong>0.10</strong></td>
 </tr>
 </tbody>
 </table>
+<p>The ranks show reasonably nice agreement across groups, indicating that this weighting is largely replicable. We combined the two groups to create an overall average importance rating (bottom row).</p>
 <p>The per-fit score is:</p>
 <div class="arithmatex">\[
 \text{Per-Fit Score} = \sum_{i} w_i \cdot s_i
@@ -1443,8 +1450,27 @@
 <h2 id="step-2-across-fit-score-initial-vs-tuned-weights">Step 2: Across-Fit Score (Initial vs. Tuned Weights)<a class="headerlink" href="#step-2-across-fit-score-initial-vs-tuned-weights" title="Permanent link">&para;</a></h2>
 <p>The across-fit score is a weighted average of the Initial Fit and Tuned Fit per-fit scores. These weights were derived from a separate survey.</p>
 <p>257 hearing aid consumers were asked to rate: <em>"How Important Is It That Your Hearing Aids Sound Good With Minimal Effort?"</em> on a 5-point scale. We intended this question to be a proxy for the importance of the quality of the initial fit.</p>
-<p><img alt="Rated importance of minimal effort" src="../../assets/table3-rated-importance-minimal-effort.png" /></p>
-<p><em>Table 3. Percentage of hearing aid consumers responding to the question "How Important Is It That Your Hearing Aids Sound Good With Minimal Effort?"</em></p>
+<p><em>Table 3.</em> Percentage of hearing aid consumers responding to: "How Important Is It That Your Hearing Aids Sound Good With Minimal Effort?"</p>
+<table>
+<thead>
+<tr>
+<th>Not-At-All Important (0.0)</th>
+<th>Slightly Important (0.25)</th>
+<th>Moderately Important (0.5)</th>
+<th>Very Important (0.75)</th>
+<th>Extremely Important (1.0)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1%</td>
+<td>4%</td>
+<td>15%</td>
+<td>37%</td>
+<td>43%</td>
+</tr>
+</tbody>
+</table>
 <p>When responses were normalized to a 0--1 range, the group average is <strong>0.77</strong>. Therefore:</p>
 <table>
 <thead>
@@ -1520,7 +1546,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 7, 2026 18:53:25 UTC">April 7, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 7, 2026 20:23:58 UTC">April 7, 2026</span>
   </span>
 
     

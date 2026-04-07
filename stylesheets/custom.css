@@ -1,4 +1,4 @@
-/* HearAdvisor brand colors: purple #7937CE, light purple #DABEFF */
+/* HearAdvisor brand colors: purple #7937CE, light purple #DABEFF, bg #f9f4ff */
 
 /* Light mode */
 [data-md-color-scheme="default"] {
@@ -9,6 +9,7 @@
   --md-primary-bg-color--light: #ffffff;
   --md-accent-fg-color: #9B6BD6;
   --md-typeset-a-color: #7937CE;
+  --md-default-bg-color: #f9f4ff;
 }
 
 /* Dark mode */
@@ -18,6 +19,8 @@
   --md-primary-fg-color--dark: #7937CE;
   --md-accent-fg-color: #DABEFF;
   --md-typeset-a-color: #DABEFF;
+  --md-default-bg-color: #1a1025;
+  --md-default-bg-color--light: #211333;
 }
 
 /* Header gradient to match hearadvisor.com */

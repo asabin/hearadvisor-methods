@@ -119,9 +119,9 @@
     "/>
 
   <!-- Legend box -->
-  <rect x="355" y="38" width="185" height="48" rx="4" fill="white" fill-opacity="0.85" stroke="#ddd" stroke-width="0.5"/>
-  <line x1="365" y1="53" x2="395" y2="53" stroke="#7937CE" stroke-width="2.5"/>
-  <text x="402" y="57" class="legend-text">HearAdvisor Lab</text>
-  <line x1="365" y1="73" x2="395" y2="73" stroke="#888888" stroke-width="2" stroke-dasharray="8,5"/>
-  <text x="402" y="77" class="legend-text">Bentler &amp; Pavlovic 1992</text>
+  <rect x="80" y="38" width="185" height="48" rx="4" fill="white" fill-opacity="0.85" stroke="#ddd" stroke-width="0.5"/>
+  <line x1="90" y1="53" x2="120" y2="53" stroke="#7937CE" stroke-width="2.5"/>
+  <text x="127" y="57" class="legend-text">HearAdvisor Lab</text>
+  <line x1="90" y1="73" x2="120" y2="73" stroke="#888888" stroke-width="2" stroke-dasharray="8,5"/>
+  <text x="127" y="77" class="legend-text">Bentler &amp; Pavlovic 1992</text>
 </svg>

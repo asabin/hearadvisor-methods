@@ -1539,7 +1539,7 @@
     
     <div class="page-git-info">
       <small>
-        Last updated: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 8, 2026 20:19:03 UTC">April 8, 2026</span>
+        Last updated: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 8, 2026 20:32:13 UTC">April 8, 2026</span>
         &middot;
         <a href="https://github.com/asabin/hearadvisor-methods/commits/main/docs/hearing-devices/device-settings.md">
           View page history
@@ -1563,7 +1563,7 @@
 
 <h1 id="device-settings">Device Settings<a class="headerlink" href="#device-settings" title="Permanent link">&para;</a></h1>
 <h2 id="hearing-loss">Hearing Loss<a class="headerlink" href="#hearing-loss" title="Permanent link">&para;</a></h2>
-<p>We chose to target the standard sloping moderate hearing loss from Bisgaard et al. (2010)<sup id="fnref:6"><a class="footnote-ref" href="#fn:6">1</a></sup> (N3 configuration; see Table 1). We chose this loss because:</p>
+<p>We chose to target the standard sloping moderate hearing loss from Bisgaard et al. (2010)<a href="../references/">[6]</a> (N3 configuration; see Table 1). We chose this loss because:</p>
 <ol>
 <li>It is reasonably common</li>
 <li>It is near the middle of the overall aided population</li>
@@ -1601,7 +1601,7 @@
 </tr>
 </tbody>
 </table>
-<p>Prescription targets are computed using NAL-NL2<sup id="fnref:7"><a class="footnote-ref" href="#fn:7">2</a></sup> prescription with unspecified gender, non-tonal language, and prior hearing aid experience. Each hearing aid was recorded in two configurations -- "Initial" and "Tuned" -- that differ in their gain settings and ear couplings (see <a href="#initial-fit">Initial Fit</a> and <a href="#tuned-fit">Tuned Fit</a>).</p>
+<p>Prescription targets are computed using NAL-NL2<a href="../references/">[7]</a> prescription with unspecified gender, non-tonal language, and prior hearing aid experience. Each hearing aid was recorded in two configurations -- "Initial" and "Tuned" -- that differ in their gain settings and ear couplings (see <a href="#initial-fit">Initial Fit</a> and <a href="#tuned-fit">Tuned Fit</a>).</p>
 <h2 id="initial-fit">Initial Fit<a class="headerlink" href="#initial-fit" title="Permanent link">&para;</a></h2>
 <p>Our goal for the initial fit was to approximate the settings that a user would experience if the person fitting the device just followed basic instructions.</p>
 <h3 id="figure-3a-initial-fit-gain-parameters">Figure 3a. Initial Fit -- Gain Parameters<a class="headerlink" href="#figure-3a-initial-fit-gain-parameters" title="Permanent link">&para;</a></h3>
@@ -1623,16 +1623,16 @@
 <h3 id="figure-4-tuned-fit-procedure">Figure 4. Tuned Fit Procedure<a class="headerlink" href="#figure-4-tuned-fit-procedure" title="Permanent link">&para;</a></h3>
 <pre class="mermaid"><code>flowchart TD
     A["Start with ear tip&lt;br/&gt;from Initial Fit"] --&gt; B["Adjust all available&lt;br/&gt;parameters to match&lt;br/&gt;prescriptive targets"]
-    B --&gt; C{"4-freq SII-weighted[^9]&lt;br/&gt;avg |deviation| &lt; 5 dB?&lt;br/&gt;(55 dB ISTS[^10])"}
+    B --&gt; C{"4-freq SII-weighted[[9]](references.md)&lt;br/&gt;avg |deviation| &lt; 5 dB?&lt;br/&gt;(55 dB ISTS[[10]](references.md))"}
     C --&gt;|Yes| D{"Fit stable?&lt;br/&gt;(no audible feedback)"}
     C --&gt;|No| E["Swap for more&lt;br/&gt;occluding ear tip"]
     E --&gt; B
     D --&gt;|Yes| F["Adjust parameters&lt;br/&gt;to match targets for&lt;br/&gt;55, 65, and 75 dB&lt;br/&gt;SPL speech inputs"]
     D --&gt;|No| E</code></pre>
-<p><strong>Success criterion:</strong> A 4-frequency (0.5, 1, 2, 4 kHz) SII-importance-weighted<sup id="fnref:9"><a class="footnote-ref" href="#fn:9">3</a></sup> average absolute deviation from prescription of less than 5 dB (with a 55 dB International Speech Test Signal -- ISTS<sup id="fnref:10"><a class="footnote-ref" href="#fn:10">4</a></sup>). The fit must be <strong>stable</strong> -- meaning no audible feedback.</p>
+<p><strong>Success criterion:</strong> A 4-frequency (0.5, 1, 2, 4 kHz) SII-importance-weighted<a href="../references/">[9]</a> average absolute deviation from prescription of less than 5 dB (with a 55 dB International Speech Test Signal -- ISTS<a href="../references/">[10]</a>). The fit must be <strong>stable</strong> -- meaning no audible feedback.</p>
 <h2 id="real-ear-measures">"Real Ear" Measures<a class="headerlink" href="#real-ear-measures" title="Permanent link">&para;</a></h2>
-<p>Several aspects of our initial and tuned fittings rely upon the equivalent of Real Ear Measures (REMs)<sup id="fnref:11"><a class="footnote-ref" href="#fn:11">5</a></sup>. We replicated this procedure on the manikin via real-time spectral analysis (&#8531; octave filterbank) of the eardrum microphone.</p>
-<p>During fitting, we presented a calibrated speech signal (ISTS <sup id="fnref2:10"><a class="footnote-ref" href="#fn:10">4</a></sup>) and computed the difference at the eardrum mic between the aided and unaided conditions. The resulting value (Insertion Gain) could be visually compared to the prescriptive targets via a custom interface.</p>
+<p>Several aspects of our initial and tuned fittings rely upon the equivalent of Real Ear Measures (REMs)<a href="../references/">[11]</a>. We replicated this procedure on the manikin via real-time spectral analysis (&#8531; octave filterbank) of the eardrum microphone.</p>
+<p>During fitting, we presented a calibrated speech signal (ISTS <a href="../references/">[10]</a>) and computed the difference at the eardrum mic between the aided and unaided conditions. The resulting value (Insertion Gain) could be visually compared to the prescriptive targets via a custom interface.</p>
 <p>This interface was used:</p>
 <ul>
 <li>When performing some initial fits (without an audiogram)</li>
@@ -1648,30 +1648,7 @@
 <h3 id="figure-5-noise-processing-settings">Figure 5. Noise Processing Settings<a class="headerlink" href="#figure-5-noise-processing-settings" title="Permanent link">&para;</a></h3>
 <pre class="mermaid"><code>flowchart TD
     A{"Does the device offer&lt;br/&gt;automatic switching?&lt;br/&gt;(e.g., scene classification)"} --&gt;|Yes| B["Use the automatic&lt;br/&gt;algorithm for all fits"]
-    A --&gt;|No| C["Leave speech-in-noise&lt;br/&gt;program ON for all&lt;br/&gt;environments[^13]"]</code></pre>
-<div class="footnote">
-<hr />
-<ol>
-<li id="fn:6">
-<p>Bisgaard et al. (2010). See <a href="../references/">References</a>.&#160;<a class="footnote-backref" href="#fnref:6" title="Jump back to footnote 1 in the text">&#8617;</a></p>
-</li>
-<li id="fn:7">
-<p>Keidser et al. (2011). See <a href="../references/">References</a>.&#160;<a class="footnote-backref" href="#fnref:7" title="Jump back to footnote 2 in the text">&#8617;</a></p>
-</li>
-<li id="fn:9">
-<p>ANSI S3.5-1997. See <a href="../references/">References</a>.&#160;<a class="footnote-backref" href="#fnref:9" title="Jump back to footnote 3 in the text">&#8617;</a></p>
-</li>
-<li id="fn:10">
-<p>Holube et al. (2010). See <a href="../references/">References</a>.&#160;<a class="footnote-backref" href="#fnref:10" title="Jump back to footnote 4 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:10" title="Jump back to footnote 4 in the text">&#8617;</a></p>
-</li>
-<li id="fn:11">
-<p>Almufarrij et al. (2021). See <a href="../references/">References</a>.&#160;<a class="footnote-backref" href="#fnref:11" title="Jump back to footnote 5 in the text">&#8617;</a></p>
-</li>
-<li id="fn:13">
-<p>Manchaiah et al. (2021). See <a href="../references/">References</a>.&#160;<a class="footnote-backref" href="#fnref:13" title="Jump back to footnote 6 in the text">&#8617;</a></p>
-</li>
-</ol>
-</div>
+    A --&gt;|No| C["Leave speech-in-noise&lt;br/&gt;program ON for all&lt;br/&gt;environments[[13]](references.md)"]</code></pre>
 
 
 
@@ -1694,7 +1671,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 8, 2026 20:19:03 UTC">April 8, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 8, 2026 20:32:13 UTC">April 8, 2026</span>
   </span>
 
     

@@ -1427,7 +1427,7 @@
     
     <div class="page-git-info">
       <small>
-        Last updated: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 8, 2026 20:09:45 UTC">April 8, 2026</span>
+        Last updated: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 8, 2026 20:32:13 UTC">April 8, 2026</span>
         &middot;
         <a href="https://github.com/asabin/hearadvisor-methods/commits/main/docs/hearing-devices/metrics/occlusion.md">
           View page history
@@ -1451,31 +1451,31 @@
 
 <h1 id="occlusion">Occlusion<a class="headerlink" href="#occlusion" title="Permanent link">&para;</a></h1>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p>Own-voice quality is a common complaint of hearing aid users<sup id="fnref:16"><a class="footnote-ref" href="#fn:16">1</a></sup> and can be attributed to two factors:</p>
+<p>Own-voice quality is a common complaint of hearing aid users<a href="../../references/">[16]</a> and can be attributed to two factors:</p>
 <ol>
 <li><strong>Occlusion</strong> -- bone-conducted sound becomes trapped in the ear canal due to the physical seal of the device</li>
 <li><strong>Amplification</strong> -- the receiver-transmitted sound alters own-voice perception</li>
 </ol>
-<p>For these initial metrics, we chose to focus on <strong>occlusion</strong>, which is the larger contributor to user complaints<sup id="fnref:17"><a class="footnote-ref" href="#fn:17">2</a></sup>.</p>
+<p>For these initial metrics, we chose to focus on <strong>occlusion</strong>, which is the larger contributor to user complaints<a href="../../references/">[17]</a>.</p>
 <h2 id="goal">Goal<a class="headerlink" href="#goal" title="Permanent link">&para;</a></h2>
-<p>Our goal was to estimate <em>subjective occlusion</em> (a user's rating of their perceived occlusion on a 0--10 scale, as in Cubick et al. 2022<sup id="fnref:18"><a class="footnote-ref" href="#fn:18">3</a></sup>) via acoustic measurements.</p>
+<p>Our goal was to estimate <em>subjective occlusion</em> (a user's rating of their perceived occlusion on a 0--10 scale, as in Cubick et al. 2022<a href="../../references/">[18]</a>) via acoustic measurements.</p>
 <h2 id="measurement-reoig">Measurement: REOIG<a class="headerlink" href="#measurement-reoig" title="Permanent link">&para;</a></h2>
-<p>We measure <strong>Real Ear Occluded Insertion Gain (REOIG)</strong> -- the difference in spectrum between the open ear and the aided ear with the device powered off<sup id="fnref2:18"><a class="footnote-ref" href="#fn:18">3</a></sup>. We reasoned that acoustic coupling that generates high subjective occlusion usually also generates more negative REOIG (excluding deep-insertion devices).</p>
+<p>We measure <strong>Real Ear Occluded Insertion Gain (REOIG)</strong> -- the difference in spectrum between the open ear and the aided ear with the device powered off<a href="../../references/">[18]</a>. We reasoned that acoustic coupling that generates high subjective occlusion usually also generates more negative REOIG (excluding deep-insertion devices).</p>
 <h3 id="devices-without-active-occlusion-cancellation">Devices Without Active Occlusion Cancellation<a class="headerlink" href="#devices-without-active-occlusion-cancellation" title="Permanent link">&para;</a></h3>
-<p>Using data from Cubick et al. (2022)<sup id="fnref3:18"><a class="footnote-ref" href="#fn:18">3</a></sup>, we observed that the group average REOIG from <strong>2--4 kHz</strong> for instant-fit tips had a strong linear correlation to the group average subjective occlusion (Figure 6A). We use this relationship to map from REOIG to estimated subjective occlusion.</p>
+<p>Using data from Cubick et al. (2022)<a href="../../references/">[18]</a>, we observed that the group average REOIG from <strong>2--4 kHz</strong> for instant-fit tips had a strong linear correlation to the group average subjective occlusion (Figure 6A). We use this relationship to map from REOIG to estimated subjective occlusion.</p>
 <h3 id="devices-with-active-occlusion-cancellation-aoc">Devices With Active Occlusion Cancellation (AOC)<a class="headerlink" href="#devices-with-active-occlusion-cancellation-aoc" title="Permanent link">&para;</a></h3>
-<p>For devices with AOC<sup id="fnref:19"><a class="footnote-ref" href="#fn:19">4</a></sup>, the passive REOIG measurement does not capture the influence of cancellation on subjective occlusion. For these devices, we instead measure <strong>objective occlusion on vocalizing humans</strong>.</p>
-<p>Objective occlusion is the difference in probe mic spectra between the open ear and the aided ear while the participant vocalizes a sustained /i/ (as in Kuk et al. 2009<sup id="fnref:20"><a class="footnote-ref" href="#fn:20">5</a></sup>):</p>
+<p>For devices with AOC<a href="../../references/">[19]</a>, the passive REOIG measurement does not capture the influence of cancellation on subjective occlusion. For these devices, we instead measure <strong>objective occlusion on vocalizing humans</strong>.</p>
+<p>Objective occlusion is the difference in probe mic spectra between the open ear and the aided ear while the participant vocalizes a sustained /i/ (as in Kuk et al. 2009<a href="../../references/">[20]</a>):</p>
 <div class="arithmatex">\[
 \text{Objective Occlusion} = \text{REAR}_{\text{VOC}} - \text{REUR}_{\text{VOC}}
 \]</div>
 <p>We then use a two-step estimation to place AOC devices on the same subjective scale:</p>
 <ol>
-<li><strong>Map from objective occlusion to a matched REOIG value:</strong> We replotted data from Sabin (2020)<sup id="fnref3:19"><a class="footnote-ref" href="#fn:19">4</a></sup> (their Figs. 4 and 7) and observed a strong linear correlation between group average objective occlusion in the <strong>250--500 Hz band</strong> and the group average REOIG from 2--4 kHz (Figure 6B).</li>
+<li><strong>Map from objective occlusion to a matched REOIG value:</strong> We replotted data from Sabin (2020)<a href="../../references/">[19]</a> (their Figs. 4 and 7) and observed a strong linear correlation between group average objective occlusion in the <strong>250--500 Hz band</strong> and the group average REOIG from 2--4 kHz (Figure 6B).</li>
 <li><strong>Map from matched REOIG to subjective occlusion:</strong> Using the same relationship as for non-AOC devices (Figure 6A).</li>
 </ol>
 <p><img alt="Occlusion metrics" src="../../assets/fig6-occlusion-metrics.png" /></p>
-<p><em>Figure 6. (A) Relationship between REOIG and subjective occlusion, replotted from Cubick et al. (2022)<sup id="fnref4:18"><a class="footnote-ref" href="#fn:18">3</a></sup>. (B) Relationship between REOG and objective occlusion, replotted from Sabin (2020)<sup id="fnref2:19"><a class="footnote-ref" href="#fn:19">4</a></sup>.</em></p>
+<p><em>Figure 6. (A) Relationship between REOIG and subjective occlusion, replotted from Cubick et al. (2022)<a href="../../references/">[18]</a>. (B) Relationship between REOG and objective occlusion, replotted from Sabin (2020)<a href="../../references/">[19]</a>.</em></p>
 <h2 id="mapping-to-0-5-scale">Mapping to 0--5 Scale<a class="headerlink" href="#mapping-to-0-5-scale" title="Permanent link">&para;</a></h2>
 <p>The estimated subjective occlusion value is inverted and scaled to our 0--5 scale:</p>
 <ul>
@@ -1483,26 +1483,6 @@
 <li><strong>0</strong> = severe occlusion (deeply occluding fit with no vent)</li>
 </ul>
 <p>Higher scores are better -- they indicate that the device coupling allows low-frequency energy to escape the ear canal naturally.</p>
-<div class="footnote">
-<hr />
-<ol>
-<li id="fn:16">
-<p>Jenstad, Van Tasell, &amp; Ewert (2003). See <a href="../../references/">References</a>.&#160;<a class="footnote-backref" href="#fnref:16" title="Jump back to footnote 1 in the text">&#8617;</a></p>
-</li>
-<li id="fn:17">
-<p>Kuk, Keenan, &amp; Ludvigsen (2005). See <a href="../../references/">References</a>.&#160;<a class="footnote-backref" href="#fnref:17" title="Jump back to footnote 2 in the text">&#8617;</a></p>
-</li>
-<li id="fn:18">
-<p>Cubick et al. (2022). See <a href="../../references/">References</a>.&#160;<a class="footnote-backref" href="#fnref:18" title="Jump back to footnote 3 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:18" title="Jump back to footnote 3 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:18" title="Jump back to footnote 3 in the text">&#8617;</a><a class="footnote-backref" href="#fnref4:18" title="Jump back to footnote 3 in the text">&#8617;</a></p>
-</li>
-<li id="fn:19">
-<p>Sabin (2020). See <a href="../../references/">References</a>.&#160;<a class="footnote-backref" href="#fnref:19" title="Jump back to footnote 4 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:19" title="Jump back to footnote 4 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:19" title="Jump back to footnote 4 in the text">&#8617;</a></p>
-</li>
-<li id="fn:20">
-<p>Kuk, Keenan, &amp; Lau (2009). See <a href="../../references/">References</a>.&#160;<a class="footnote-backref" href="#fnref:20" title="Jump back to footnote 5 in the text">&#8617;</a></p>
-</li>
-</ol>
-</div>
 
 
 
@@ -1525,7 +1505,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 8, 2026 20:09:45 UTC">April 8, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 8, 2026 20:32:13 UTC">April 8, 2026</span>
   </span>
 
     

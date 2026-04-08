@@ -1,0 +1,87 @@
+/* HearAdvisor brand colors: purple #7937CE, light purple #DABEFF, bg #f9f4ff */
+
+/* Light mode */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #7937CE;
+  --md-primary-fg-color--light: #9B6BD6;
+  --md-primary-fg-color--dark: #5E2BA3;
+  --md-primary-bg-color: #ffffff;
+  --md-primary-bg-color--light: #ffffff;
+  --md-accent-fg-color: #9B6BD6;
+  --md-typeset-a-color: #7937CE;
+  --md-default-bg-color: #f9f4ff;
+}
+
+/* Dark mode */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #9B6BD6;
+  --md-primary-fg-color--light: #DABEFF;
+  --md-primary-fg-color--dark: #7937CE;
+  --md-accent-fg-color: #DABEFF;
+  --md-typeset-a-color: #DABEFF;
+}
+
+/* Hide repo icon from header but keep edit links on pages */
+.md-header__source {
+  display: none;
+}
+
+/* Header - white toolbar with black text */
+.md-header {
+  background: #ffffff;
+  color: #1a1a1a;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.md-header .md-header__title {
+  color: #1a1a1a;
+}
+
+.md-header .md-header__button,
+.md-header .md-search__icon {
+  color: #1a1a1a;
+}
+
+[data-md-color-scheme="slate"] .md-header {
+  background: #1a1025;
+  color: #DABEFF;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+[data-md-color-scheme="slate"] .md-header .md-header__title,
+[data-md-color-scheme="slate"] .md-header .md-header__button,
+[data-md-color-scheme="slate"] .md-header .md-search__icon {
+  color: #DABEFF;
+}
+
+/* Tabs and navigation active states */
+.md-tabs__link--active,
+.md-nav__link--active {
+  color: #7937CE;
+}
+
+[data-md-color-scheme="slate"] .md-tabs__link--active,
+[data-md-color-scheme="slate"] .md-nav__link--active {
+  color: #DABEFF;
+}
+
+/* Page git info bar at the top of content */
+.page-git-info {
+  margin-bottom: 0.5em;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  opacity: 0.7;
+}
+
+.page-git-info small {
+  font-size: 0.7rem;
+}
+
+.page-git-info a {
+  color: var(--md-typeset-a-color);
+  text-decoration: none;
+}
+
+.page-git-info a:hover {
+  text-decoration: underline;
+}

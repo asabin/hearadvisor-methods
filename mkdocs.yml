@@ -1,0 +1,116 @@
+site_name: HearAdvisor Methods
+site_url: https://asabin.github.io/hearadvisor-methods/
+site_description: HearAdvisor procedures for recording and evaluating hearing devices and earplugs
+site_author: Andrew Sabin Ph.D., Steve Taddei Au.D., Abram Bailey Au.D.
+
+edit_uri: ""
+
+theme:
+  name: material
+  custom_dir: docs/overrides
+  logo: assets/logo.svg
+  favicon: assets/logo.svg
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  font:
+    text: Inter
+    code: Roboto Mono
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.action.edit
+    - toc.follow
+
+nav:
+  - Home: index.md
+  - Hearing Devices:
+    - Introduction: hearing-devices/index.md
+    - Laboratory Setup: hearing-devices/laboratory-setup.md
+    - Recordings: hearing-devices/recordings.md
+    - Device Settings: hearing-devices/device-settings.md
+    - Metrics:
+      - Overview: hearing-devices/metrics/index.md
+      - Speech Perception Benefit: hearing-devices/metrics/speech-perception.md
+      - Occlusion: hearing-devices/metrics/occlusion.md
+      - Music Streaming Quality: hearing-devices/metrics/music-streaming.md
+      - Feedback: hearing-devices/metrics/feedback.md
+      - SoundScore: hearing-devices/metrics/soundscore.md
+    - Results: hearing-devices/results.md
+    - References: hearing-devices/references.md
+  - Earplugs:
+    - Introduction: earplugs/index.md
+    - Laboratory Setup: earplugs/laboratory-setup.md
+    - Recordings: earplugs/recordings.md
+    - Metrics:
+      - Overview: earplugs/metrics/index.md
+      - Perceptual Loudness Reduction: earplugs/metrics/loudness-reduction.md
+      - Perceptual Sound Quality: earplugs/metrics/sound-quality.md
+      - SoundScore & SoundGrade: earplugs/metrics/soundscore.md
+    - Results: earplugs/results.md
+    - References: earplugs/references.md
+  - Changelog: changelog.md
+  - Planned Enhancements: https://github.com/users/asabin/projects/1
+  - How to Cite: how-to-cite.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.arithmatex:
+      generic: true
+  - tables
+  - attr_list
+  - md_in_html
+  - footnotes
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - toc:
+      permalink: true
+      toc_depth: 3
+
+extra_css:
+  - stylesheets/custom.css
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/asabin/hearadvisor-methods
+  generator: false
+
+copyright: "&copy; HearAdvisor LLC"
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: date
+      fallback_to_build_date: true

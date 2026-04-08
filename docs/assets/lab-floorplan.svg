@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <style>
+    text { font-family: Inter, -apple-system, sans-serif; fill: currentColor; }
+    line, rect, circle, ellipse { stroke: currentColor; }
+    @media (prefers-color-scheme: dark) {
+      text { fill: #e0e0e0; }
+      line, rect, circle, ellipse { stroke: #e0e0e0; }
+    }
+  </style>
+
+  <!-- Room outline -->
+  <rect x="30" y="30" width="340" height="340" fill="none" stroke-width="2"/>
+
+  <!-- Room dimensions -->
+  <text x="200" y="22" text-anchor="middle" font-size="13">3.96 m</text>
+  <text x="200" y="388" text-anchor="middle" font-size="13">3.96 m</text>
+  <text x="14" y="200" text-anchor="middle" font-size="13" transform="rotate(-90, 14, 200)">3.96 m</text>
+  <text x="386" y="200" text-anchor="middle" font-size="13" transform="rotate(90, 386, 200)">3.96 m</text>
+
+  <!-- Speaker ring (1m radius = ~86px at this scale, centered at 200,200) -->
+  <circle cx="200" cy="200" r="86" fill="none" stroke-width="1" stroke-dasharray="4,4" opacity="0.4"/>
+
+  <!-- Radius label -->
+  <line x1="200" y1="200" x2="200" y2="114" stroke-width="1" stroke-dasharray="3,3" opacity="0.5"/>
+  <text x="210" y="160" font-size="11" opacity="0.7">1 m</text>
+
+  <!-- 8 Speakers at 45° intervals -->
+  <!-- 0° (top) -->
+  <circle cx="200" cy="114" r="8" fill="none" stroke-width="1.5"/>
+  <!-- 45° -->
+  <circle cx="261" cy="139" r="8" fill="none" stroke-width="1.5"/>
+  <!-- 90° (right) -->
+  <circle cx="286" cy="200" r="8" fill="none" stroke-width="1.5"/>
+  <!-- 135° -->
+  <circle cx="261" cy="261" r="8" fill="none" stroke-width="1.5"/>
+  <!-- 180° (bottom) -->
+  <circle cx="200" cy="286" r="8" fill="none" stroke-width="1.5"/>
+  <!-- 225° -->
+  <circle cx="139" cy="261" r="8" fill="none" stroke-width="1.5"/>
+  <!-- 270° (left) -->
+  <circle cx="114" cy="200" r="8" fill="none" stroke-width="1.5"/>
+  <!-- 315° -->
+  <circle cx="139" cy="139" r="8" fill="none" stroke-width="1.5"/>
+
+  <!-- KEMAR manikin (simplified head shape at center) -->
+  <!-- Head -->
+  <ellipse cx="200" cy="206" rx="10" ry="12" fill="none" stroke-width="1.5"/>
+  <!-- Left ear -->
+  <ellipse cx="187" cy="206" rx="4" ry="6" fill="none" stroke-width="1"/>
+  <!-- Right ear -->
+  <ellipse cx="213" cy="206" rx="4" ry="6" fill="none" stroke-width="1"/>
+
+  <!-- Label -->
+  <text x="200" y="230" text-anchor="middle" font-size="10" opacity="0.6">KEMAR</text>
+</svg>

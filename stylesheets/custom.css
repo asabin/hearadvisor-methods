@@ -21,6 +21,11 @@
   --md-typeset-a-color: #DABEFF;
 }
 
+/* Hide repo icon from header but keep edit links on pages */
+.md-header__source {
+  display: none;
+}
+
 /* Header - white toolbar with black text */
 .md-header {
   background: #ffffff;

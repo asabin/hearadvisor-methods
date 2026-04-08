@@ -18,8 +18,6 @@
 
   <!-- ===== PANEL A ===== -->
   <!-- Plot area: x=[80,280], y=[20,170], X:-20..0, Y:0..10 -->
-  <text x="70" y="18" class="panel-label">A</text>
-
   <!-- Axes -->
   <line x1="80" y1="170" x2="280" y2="170" class="axis-line"/>
   <line x1="80" y1="20" x2="80" y2="170" class="axis-line"/>
@@ -50,7 +48,7 @@
   <text x="280" y="186" text-anchor="middle" class="axis-label">0</text>
 
   <!-- X title -->
-  <text x="180" y="202" text-anchor="middle" class="axis-title">REOG 2-4 kHz (dB)</text>
+  <text x="180" y="202" text-anchor="middle" class="axis-title">REOIG 2-4 kHz (dB)</text>
 
   <!-- Fit line -->
   <line x1="80" y1="75.5" x2="280" y2="158" stroke="#888" stroke-width="1.5" opacity="0.5"/>
@@ -66,8 +64,6 @@
 
   <!-- ===== PANEL B ===== -->
   <!-- Plot area: x=[80,280], y=[230,410], X:-5..15, Y:-30..5 -->
-  <text x="70" y="228" class="panel-label">B</text>
-
   <!-- Axes -->
   <line x1="80" y1="410" x2="280" y2="410" class="axis-line"/>
   <line x1="80" y1="230" x2="80" y2="410" class="axis-line"/>
@@ -93,7 +89,7 @@
   <text x="72" y="234" text-anchor="end" class="axis-label">5</text>
 
   <!-- Y title -->
-  <text x="22" y="320" text-anchor="middle" class="axis-title" transform="rotate(-90, 22, 320)">REOG 2-4 kHz (dB)</text>
+  <text x="22" y="320" text-anchor="middle" class="axis-title" transform="rotate(-90, 22, 320)">REOIG 2-4 kHz (dB)</text>
 
   <!-- X labels -->
   <text x="80" y="426" text-anchor="middle" class="axis-label">-5</text>

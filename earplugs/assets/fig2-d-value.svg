@@ -12,7 +12,6 @@
       .eq-text { fill: #aaa; }
       .grid { stroke: #333; }
       .axis-line { stroke: #555; }
-      circle { fill: #ccc; }
     }
   </style>
 
@@ -36,7 +35,7 @@
   <text x="52" y="24" text-anchor="end" class="axis-label">10</text>
 
   <!-- Y title -->
-  <text x="14" y="160" text-anchor="middle" class="axis-title" transform="rotate(-90, 14, 160)">Obtained Rating</text>
+  <text x="14" y="160" text-anchor="middle" class="axis-title" transform="rotate(-90, 14, 160)">Predicted Quality Rating</text>
 
   <!-- X grid -->
   <line x1="128" y1="20" x2="128" y2="300" class="grid"/>
@@ -56,114 +55,8 @@
   <!-- X title -->
   <text x="230" y="345" text-anchor="middle" class="axis-title">D Value</text>
 
-  <!-- Data points (104 points eyeballed from Moore & Tan 2003) -->
-  <circle cx="94.0" cy="112.4" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="100.8" cy="98.4" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="100.8" cy="92.8" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="107.6" cy="76.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="107.6" cy="104.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="114.4" cy="76.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="114.4" cy="90.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="114.4" cy="137.6" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="121.2" cy="53.6" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="121.2" cy="76.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="121.2" cy="98.4" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="121.2" cy="132.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="128.0" cy="62.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="128.0" cy="76.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="128.0" cy="90.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="128.0" cy="109.6" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="128.0" cy="132.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="128.0" cy="154.4" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="134.8" cy="76.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="134.8" cy="81.6" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="134.8" cy="104.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="134.8" cy="118.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="134.8" cy="137.6" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="134.8" cy="146.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="141.6" cy="76.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="141.6" cy="90.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="141.6" cy="126.4" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="141.6" cy="137.6" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="141.6" cy="160.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="148.4" cy="104.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="148.4" cy="118.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="148.4" cy="132.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="148.4" cy="146.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="148.4" cy="160.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="155.2" cy="109.6" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="155.2" cy="126.4" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="155.2" cy="146.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="155.2" cy="160.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="155.2" cy="174.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="162.0" cy="118.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="162.0" cy="132.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="162.0" cy="146.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="162.0" cy="160.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="162.0" cy="165.6" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="168.8" cy="132.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="168.8" cy="146.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="168.8" cy="154.4" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="168.8" cy="174.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="168.8" cy="188.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="175.6" cy="137.6" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="175.6" cy="154.4" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="175.6" cy="165.6" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="175.6" cy="182.4" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="182.4" cy="146.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="182.4" cy="160.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="182.4" cy="174.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="182.4" cy="193.6" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="189.2" cy="160.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="189.2" cy="174.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="189.2" cy="188.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="189.2" cy="202.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="196.0" cy="174.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="196.0" cy="188.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="196.0" cy="202.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="196.0" cy="216.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="202.8" cy="182.4" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="202.8" cy="193.6" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="202.8" cy="210.4" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="209.6" cy="188.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="209.6" cy="202.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="209.6" cy="216.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="216.4" cy="193.6" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="216.4" cy="210.4" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="230.0" cy="202.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="230.0" cy="216.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="230.0" cy="210.4" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="236.8" cy="210.4" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="236.8" cy="221.6" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="243.6" cy="216.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="243.6" cy="216.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="250.4" cy="216.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="250.4" cy="230.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="264.0" cy="216.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="264.0" cy="221.6" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="264.0" cy="210.4" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="270.8" cy="221.6" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="270.8" cy="216.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="277.6" cy="230.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="277.6" cy="216.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="284.4" cy="230.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="284.4" cy="216.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="298.0" cy="238.4" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="298.0" cy="230.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="298.0" cy="216.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="318.4" cy="244.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="318.4" cy="230.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="332.0" cy="249.6" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="332.0" cy="244.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="345.6" cy="258.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="366.0" cy="244.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="366.0" cy="258.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="379.6" cy="249.6" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="386.4" cy="258.0" r="3" fill="currentColor" opacity="0.8"/>
-  <circle cx="400.0" cy="266.4" r="3" fill="currentColor" opacity="0.8"/>
-
   <!-- Polynomial curve: y = 0.2x² - 3.1x + 10.5 -->
-  <polyline fill="none" stroke="#888" stroke-width="1.5" opacity="0.6"
+  <polyline fill="none" stroke="#7937CE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
     points="
       73.6,23.1 80.4,31.5 87.2,39.8 94.0,48.0 100.8,56.1
       107.6,64.0 114.4,71.9 121.2,79.6 128.0,87.2 134.8,94.7
@@ -178,5 +71,5 @@
     "/>
 
   <!-- Equation label -->
-  <text x="260" y="60" class="eq-text">y = 0.2x² − 3.1x + 10.5</text>
+  <text x="270" y="80" class="eq-text">y = 0.2x² − 3.1x + 10.5</text>
 </svg>

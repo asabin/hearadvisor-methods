@@ -8,7 +8,7 @@ This is a living document. When citing it, include the date you accessed it so r
 
 ## Recommended Citation
 
-> Sabin, A., Taddei, S., & Bailey, A. HearAdvisor methodology documentation. HearAdvisor LLC. Retrieved [date], from https://asabin.github.io/hearadvisor-methods/
+> Sabin, A., Taddei, S., & Bailey, A. HearAdvisor methodology documentation. HearAdvisor LLC. Retrieved [date], from https://hearadvisor.com/methods/
 
 **BibTeX:**
 
@@ -16,7 +16,7 @@ This is a living document. When citing it, include the date you accessed it so r
 @misc{hearadvisor_methods,
   title={HearAdvisor Methodology Documentation},
   author={Sabin, Andrew and Taddei, Steve and Bailey, Abram},
-  howpublished={https://asabin.github.io/hearadvisor-methods/},
+  howpublished={https://hearadvisor.com/methods/},
   note={Accessed: YYYY-MM-DD}
 }
 ```
@@ -25,7 +25,7 @@ This is a living document. When citing it, include the date you accessed it so r
 
 To reference a particular metric or procedure, link directly to the page:
 
-> Sabin, A., Taddei, S., & Bailey, A. Speech perception benefit metric. In *HearAdvisor Methodology Documentation.* HearAdvisor LLC. Retrieved [date], from https://asabin.github.io/hearadvisor-methods/hearing-devices/metrics/speech-perception/
+> Sabin, A., Taddei, S., & Bailey, A. Speech perception benefit metric. In *HearAdvisor Methodology Documentation.* HearAdvisor LLC. Retrieved [date], from https://hearadvisor.com/methods/hearing-devices/metrics/speech-perception/
 
 ## Prior Publications
 

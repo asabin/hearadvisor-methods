@@ -1,5 +1,9 @@
 {% extends "base.html" %}
 
+{% block extrahead %}
+  <meta name="robots" content="noindex, nofollow">
+{% endblock %}
+
 {% block content %}
   {% if page and page.meta and not (page.meta.hide_git_info) %}
     {% if page.meta.git_revision_date_localized %}

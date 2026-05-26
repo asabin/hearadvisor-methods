@@ -12,7 +12,7 @@ The resulting space had the following properties:
 | Parameter                                   | Value                     |
 | ------------------------------------------- | ------------------------- |
 | Ambient sound pressure level                | 35.7 dB LAeq (A-weighted) |
-| 4-frequency average RT60 (0.5, 1, 2, 4 kHz) | 0.072 s                   |
+| 4-frequency average RT60 (0.5, 1, 2, 4 kHz) | 0.059 s                   |
 | Estimated critical distance                 | 1.3 m                     |
 
 
@@ -26,8 +26,8 @@ We installed a ring of 8 speakers (Yamaha HS5) with a radius of 1 m -- thus ensu
 
 We placed an acoustic manikin (KEMAR 45BA) in the center of the speaker ring. The height of its artificial pinnae was aligned with the high-frequency drivers (tweeter) of the speakers. The manikin has:
 
-- Anthropometric pinnae
-- VA-style tapered ear canals
+- GRAS KB5000/KB5001  Artificial Pinnae
+- GRAS RA0401 High-Frequency Ear Simulators
 - A wig
 - Internal cavity filled with sand (for high SPL testing of earplugs)
 

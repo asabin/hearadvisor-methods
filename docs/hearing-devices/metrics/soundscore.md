@@ -52,9 +52,17 @@ When responses were normalized to a 0--1 range, the group average is **0.77**. T
 
 ## Step 3: Normalization
 
-The observed overall scores had a maximum of 3.9 and an average of 2.3. These values could be misleading to users because in other products, the star rating of the best performing devices is usually very close to 5.0 (a score of 3.9 might be seen as mediocre).
+When this methodology was first published, the observed overall scores had a maximum of 3.9 and an average of 2.3. These values could be misleading to users because in other products, the star rating of the best performing devices is usually very close to 5.0 (a score of 3.9 might be seen as mediocre).
 
-With this in mind, we added **1.1** to all devices' scores -- placing the top scorer at 5.0. The resulting value is the device's **SoundScore**.
+With this in mind, we add a catalog-wide presentation offset to every eligible device's raw across-fit score, chosen so that the current top performer sits at exactly 5.0:
+
+\[
+\text{Normalization offset} = 5.0 - \max(\text{raw across-fit score})
+\]
+
+The same offset is added to every eligible device, and the result is the device's **SoundScore**. When the methodology was originally published this offset was **+1.1**, because the highest raw score was 3.9.
+
+If the highest raw score changes -- because a new device outperforms the previous leader, or because the leader's measurements are revised -- the offset is recalculated and every displayed SoundScore shifts by the same amount. This does not alter product rankings or the differences between products; it changes only where the results sit on the displayed 0--5 scale.
 
 !!! note
     This normalization is a presentation choice to align with consumer expectations for star-rating scales, not a scientific transformation. The underlying weighted scores are preserved in the data.

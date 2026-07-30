@@ -14,6 +14,19 @@ Every page also shows its last-updated date with a link to its full edit history
 
 ## Hearing Devices
 
+### July 2026 — Weight correction and normalization documentation
+
+Two corrections. Neither changes the methodology as designed; both bring the implementation and the documentation into line with the published survey weights.
+
+**Scores affected:** Yes — all hearing device SoundScores were recomputed.
+
+| Area | Description | Pages |
+|---|---|---|
+| SoundScore | Corrected an implementation mismatch in which the component weights for "Does Not Squeal" (0.15) and "Own Voice Not Boomy" (0.12) were swapped in the scoring code. Table 2 was and remains correct. Per-fit, across-fit, and SoundScore values were recomputed for every device. | [SoundScore](hearing-devices/metrics/soundscore.md) |
+| SoundScore | Documented normalization as a catalog-wide offset equal to 5.0 minus the highest raw across-fit score, recalculated when the leading raw score changes, rather than a permanently fixed +1.1. The offset was +1.1 at first publication; the behavior it describes is unchanged. | [SoundScore](hearing-devices/metrics/soundscore.md) |
+
+---
+
 ### May 2023 — Initial Publication
 
 First public documentation of HearAdvisor's hearing device evaluation methodology.

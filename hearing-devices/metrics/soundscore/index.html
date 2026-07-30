@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../../../assets/logo.svg">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -33,7 +33,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -1349,7 +1349,7 @@
     
     <div class="page-git-info">
       <small>
-        Last updated: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 8, 2026 23:49:32 UTC">April 8, 2026</span>
+        Last updated: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 30, 2026 01:36:18 UTC">July 30, 2026</span>
         &middot;
         <a href="https://github.com/asabin/hearadvisor-methods/commits/main/docs/hearing-devices/metrics/soundscore.md">
           View page history
@@ -1465,8 +1465,13 @@
 <p>Perhaps coincidentally, this proportion is similar to the estimated proportion of hearing aids fit with real ear measures<a href="../../references/">[23]</a><a href="../../references/">[24]</a><a href="../../references/">[25]</a>.</p>
 </div>
 <h2 id="step-3-normalization">Step 3: Normalization<a class="headerlink" href="#step-3-normalization" title="Permanent link">&para;</a></h2>
-<p>The observed overall scores had a maximum of 3.9 and an average of 2.3. These values could be misleading to users because in other products, the star rating of the best performing devices is usually very close to 5.0 (a score of 3.9 might be seen as mediocre).</p>
-<p>With this in mind, we added <strong>1.1</strong> to all devices' scores -- placing the top scorer at 5.0. The resulting value is the device's <strong>SoundScore</strong>.</p>
+<p>When this methodology was first published, the observed overall scores had a maximum of 3.9 and an average of 2.3. These values could be misleading to users because in other products, the star rating of the best performing devices is usually very close to 5.0 (a score of 3.9 might be seen as mediocre).</p>
+<p>With this in mind, we add a catalog-wide presentation offset to every eligible device's raw across-fit score, chosen so that the current top performer sits at exactly 5.0:</p>
+<div class="arithmatex">\[
+\text{Normalization offset} = 5.0 - \max(\text{raw across-fit score})
+\]</div>
+<p>The same offset is added to every eligible device, and the result is the device's <strong>SoundScore</strong>. When the methodology was originally published this offset was <strong>+1.1</strong>, because the highest raw score was 3.9.</p>
+<p>If the highest raw score changes -- because a new device outperforms the previous leader, or because the leader's measurements are revised -- the offset is recalculated and every displayed SoundScore shifts by the same amount. This does not alter product rankings or the differences between products; it changes only where the results sit on the displayed 0--5 scale.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This normalization is a presentation choice to align with consumer expectations for star-rating scales, not a scientific transformation. The underlying weighted scores are preserved in the data.</p>
@@ -1495,7 +1500,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 8, 2026 23:49:32 UTC">April 8, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 30, 2026 01:36:18 UTC">July 30, 2026</span>
   </span>
 
     
@@ -1579,7 +1584,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.action.edit", "toc.follow"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
         <script src="../../../javascripts/mathjax.js"></script>
       

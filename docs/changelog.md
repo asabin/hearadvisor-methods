@@ -24,6 +24,7 @@ Two corrections. Neither changes the methodology as designed; both bring the imp
 |---|---|---|
 | SoundScore | Corrected an implementation mismatch in which the component weights for "Does Not Squeal" (0.15) and "Own Voice Not Boomy" (0.12) were swapped in the scoring code. Table 2 was and remains correct. Per-fit, across-fit, and SoundScore values were recomputed for every device. | [SoundScore](hearing-devices/metrics/soundscore.md) |
 | SoundScore | Documented normalization as a catalog-wide offset equal to 5.0 minus the highest raw across-fit score, recalculated when the leading raw score changes, rather than a permanently fixed +1.1. The offset was +1.1 at first publication; the behavior it describes is unchanged. | [SoundScore](hearing-devices/metrics/soundscore.md) |
+| Results | Refreshed summary statistics to the current catalog: 109 hearing devices (was 106) and 57 earplug conditions across 32 earplugs (was 56 across 31). The hearing device SoundGrade distribution reflects the recomputed scores above -- 43 devices now meet the 4.0 Expert Choice threshold, down from 52, and the average SoundScore is 3.5 rather than 3.7. Component metric averages and all earplug metrics are unchanged. | [Devices](hearing-devices/results.md), [Earplugs](earplugs/results.md) |
 
 ---
 

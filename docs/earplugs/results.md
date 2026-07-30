@@ -2,7 +2,7 @@
 
 ## Summary
 
-As of April 2026, this procedure has been conducted on **56 earplug conditions** (each setting of a device is a condition) across **31 earplugs**.
+As of July 2026, this procedure has been conducted on **57 earplug conditions** (each setting of a device is a condition) across **32 earplugs**.
 
 - **Average perceptual loudness reduction score:** 4.0 (s.d. 0.6)
 - **Average sound quality score:** 2.6 (s.d. 1.3)
@@ -12,7 +12,7 @@ As of April 2026, this procedure has been conducted on **56 earplug conditions**
 
 ### Score Distributions
 
-*Table 2. Summary results.* First two columns show how SoundScore maps to SoundGrade. Remaining columns show distribution of metrics across the full set of 56 earplug conditions.
+*Table 2. Summary results.* First two columns show how SoundScore maps to SoundGrade. Remaining columns show distribution of metrics across the 55 scored earplug conditions (2 of the 57 tested conditions are still awaiting published scores).
 
 | SoundScore | SoundGrade | SoundGrade (Evaluations) | Loudness Reduction (Evaluations) | Sound Quality (Evaluations) |
 |---|---|---|---|---|

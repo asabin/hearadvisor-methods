@@ -16,11 +16,13 @@ As of July 2026, this procedure has been conducted on **57 earplug conditions** 
 
 | SoundScore | SoundGrade | SoundGrade (Evaluations) | Loudness Reduction (Evaluations) | Sound Quality (Evaluations) |
 |---|---|---|---|---|
-| 4.0--5.0 | A | 18 (33%) | 32 (58%) | 11 (20%) |
-| 3.0--3.9 | B | 34 (62%) | 20 (36%) | 8 (15%) |
-| 2.0--2.9 | C | 2 (4%) | 3 (5%) | 16 (29%) |
-| 1.0--1.9 | D | 1 (2%) | 0 (0%) | 17 (31%) |
-| 0.0--0.9 | F | 0 (0%) | 0 (0%) | 3 (5%) |
+| 4.0--5.0 (inclusive) | A | 18 (33%) | 32 (58%) | 11 (20%) |
+| 3.0--&lt;4.0 | B | 34 (62%) | 20 (36%) | 8 (15%) |
+| 2.0--&lt;3.0 | C | 2 (4%) | 3 (5%) | 16 (29%) |
+| 1.0--&lt;2.0 | D | 1 (2%) | 0 (0%) | 17 (31%) |
+| 0.0--&lt;1.0 | F | 0 (0%) | 0 (0%) | 3 (5%) |
+
+SoundGrades are assigned from full-precision calculated scores before display rounding.
 
 !!! tip "Full Results"
     Detailed per-device results and listening simulations are available at [hearadvisor.com](https://hearadvisor.com).

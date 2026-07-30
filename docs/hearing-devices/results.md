@@ -23,11 +23,13 @@ As of July 2026 we have run **116 devices** through our procedure:
 
 | SoundScore | SoundGrade | N Devices |
 |---|---|---|
-| 4.0--5.0 | A | 39 (34%) |
-| 3.0--3.9 | B | 43 (37%) |
-| 2.0--2.9 | C | 20 (17%) |
-| 1.0--1.9 | D | 14 (12%) |
-| 0.0--0.9 | F | 0 (0%) |
+| 4.0--5.0 (inclusive) | A | 39 (34%) |
+| 3.0--&lt;4.0 | B | 43 (37%) |
+| 2.0--&lt;3.0 | C | 20 (17%) |
+| 1.0--&lt;2.0 | D | 14 (12%) |
+| 0.0--&lt;1.0 | F | 0 (0%) |
+
+SoundGrades are assigned from full-precision calculated scores before display rounding.
 
 !!! tip "Full Results"
     Detailed per-device results, recordings, and comparisons are available at [hearadvisor.com](https://hearadvisor.com). This methodology documentation describes *how* the scores are generated; the website presents the scores themselves.

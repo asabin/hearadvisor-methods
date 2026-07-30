@@ -70,3 +70,5 @@ If the highest raw score changes -- because a new device outperforms the previou
 # Expert Choice Award
 
 We curate a list of devices with SoundScores near the top of the observed range. We give an **Expert Choice** award to any device whose overall score is within 1.0 of the maximum SoundScore (i.e., SoundScore \(\geq\) 4.0).
+
+The threshold is applied to the full-precision calculated SoundScore, before display rounding. HearAdvisor normally presents scores to one decimal place, but shows additional decimal places when rounding to one decimal would cross a SoundGrade boundary. For example, a calculated score of 3.98369 remains below 4.0, is graded B, and is displayed as 3.98 rather than 4.0.

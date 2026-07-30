@@ -41,11 +41,13 @@ We further simplify the SoundScore to a letter-grade **SoundGrade**. Letter grad
 
 | SoundScore | SoundGrade |
 |---|---|
-| 4.0--5.0 | A |
-| 3.0--3.9 | B |
-| 2.0--2.9 | C |
-| 1.0--1.9 | D |
-| 0.0--0.9 | F |
+| 4.0--5.0 (inclusive) | A |
+| 3.0--&lt;4.0 | B |
+| 2.0--&lt;3.0 | C |
+| 1.0--&lt;2.0 | D |
+| 0.0--&lt;1.0 | F |
+
+SoundGrades are calculated from the full-precision SoundScore before display rounding. HearAdvisor normally presents scores to one decimal place, but shows additional decimal places when one-decimal rounding would cross a SoundGrade boundary.
 
 For earplugs that allow for multiple levels of attenuation, the device's overall SoundScore and SoundGrade are the **maximum value** as measured across all practical levels.
 

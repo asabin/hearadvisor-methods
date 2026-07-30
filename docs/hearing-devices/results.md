@@ -2,31 +2,31 @@
 
 ## Component Metrics
 
-We have run **109 hearing device evaluations** through this procedure and computed metrics on each of our 5-point scales.
+We have run **116 hearing device evaluations** through this procedure and computed metrics on each of our 5-point scales.
 
-*Table 4. Average Component Scores Across 109 Devices.* All metrics are on a scale from 0--5 points where higher is better. Music streaming scores are reported only for devices with streaming capability (n=64).
+*Table 4. Average Component Scores Across 116 Devices.* All metrics are on a scale from 0--5 points where higher is better. Music streaming scores are reported only for devices with streaming capability (n=66).
 
 | | Speech Benefit (Quiet/Mod) | Speech Benefit (Noisy) | Own Voice Not Boomy | Does Not Squeal | Streaming Music Quality |
 |---|---|---|---|---|---|
-| **Initial Fits** Avg (s.d.) | 2.9 (1.3) | 1.3 (1.1) | 2.6 (1.1) | 4.6 (0.7) | 3.4 (0.8) |
-| **Tuned Fits** Avg (s.d.) | 3.3 (1.4) | 1.7 (1.3) | 2.3 (1.0) | 4.3 (0.9) | 3.4 (0.7) |
+| **Initial Fits** Avg (s.d.) | 2.9 (1.3) | 1.3 (1.1) | 2.6 (1.0) | 4.6 (0.7) | 3.4 (0.8) |
+| **Tuned Fits** Avg (s.d.) | 3.3 (1.4) | 1.6 (1.3) | 2.3 (1.0) | 4.3 (0.8) | 3.4 (0.7) |
 
 ## SoundScore Results
 
-As of July 2026 we have run **109 devices** through our procedure:
+As of July 2026 we have run **116 devices** through our procedure:
 
-- Average SoundScore: **3.5** (s.d. 1.0)
+- Average SoundScore: **3.4** (s.d. 1.0)
 - Expert Choice threshold: **4.0** (see [Expert Choice Award](metrics/soundscore.md#expert-choice-award))
-- Devices exceeding threshold: **43** (39% of tested products)
+- Devices meeting threshold: **39** (34% of tested products)
 
 *Table 5. SoundGrade.* Mapping of SoundScore to SoundGrade. Data as of July 2026.
 
 | SoundScore | SoundGrade | N Devices |
 |---|---|---|
-| 4.0--5.0 | A | 43 (39%) |
-| 3.0--3.9 | B | 37 (34%) |
-| 2.0--2.9 | C | 18 (17%) |
-| 1.0--1.9 | D | 11 (10%) |
+| 4.0--5.0 | A | 39 (34%) |
+| 3.0--3.9 | B | 43 (37%) |
+| 2.0--2.9 | C | 20 (17%) |
+| 1.0--1.9 | D | 14 (12%) |
 | 0.0--0.9 | F | 0 (0%) |
 
 !!! tip "Full Results"

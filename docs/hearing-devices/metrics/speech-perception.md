@@ -25,7 +25,15 @@ Positive values indicate the hearing aid improved speech intelligibility; negati
 
 ### Listener-Rated Component
 
-The second component is produced by a model trained to predict listener-rated ease of speech understanding directly from audio. The aided recording and a matched clean-speech reference are each passed through a frozen speech foundation model (the Whisper encoder), and the difference between their internal representations is mapped to a predicted listener rating by a small trained network. The model is trained on ratings of our own device recordings collected through the Blind Listening Challenge. On devices held out of training, it predicts consumer ratings substantially more accurately than HASPIv2 alone. Full details of the dataset, model, and validation are given in Sabin et al. (2026)[[27]](../references.md).
+The second component is produced by a model trained to predict listener-rated ease of speech understanding directly from audio. The aided recording and a matched clean-speech reference are each passed through a frozen speech foundation model (the Whisper encoder), and the difference between their internal representations is mapped to a predicted listener rating by a small trained network.
+
+The training data come from our Blind Listening Challenge: over 100,000 quality-screened ratings in which website visitors with hearing loss rated recordings of unlabeled devices on a five-point ease-of-understanding scale. The dataset — 83 commercial products recorded across 72 realistic acoustic scenes — and the model are described in full in Sabin et al. (2026)[[27]](../references.md).
+
+The figure below shows each metric against the mean listener rating. For the proposed model (right), predictions are for devices that were entirely held out of training. The model tracks consumer ratings substantially more closely than HASPIv2 in both loud and quiet scenes:
+
+![Predicted vs. actual listener ratings for HASPIv2 and the listener-rated model on held-out devices](../assets/fig7-speech-predicted-vs-actual.png)
+
+*Each point is one device in one scene. Left: HASPIv2 vs. mean listener rating (r = 0.83 overall). Right: the listener-rated model on held-out devices (r = 0.92 overall). Reproduced from Sabin et al. (2026)[[27]](../references.md), Figure 2.*
 
 ### Quiet/Moderate vs. Loud Environments
 

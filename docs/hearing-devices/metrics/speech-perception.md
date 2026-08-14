@@ -33,7 +33,7 @@ The figure below shows each metric against the mean listener rating. For the pro
 
 ![Predicted vs. actual listener ratings for HASPIv2 and the listener-rated model on held-out devices](../assets/fig7-speech-predicted-vs-actual.png)
 
-*Each point is one device in one scene. Left: HASPIv2 vs. mean listener rating (r = 0.83 overall). Right: the listener-rated model on held-out devices (r = 0.92 overall). Reproduced from Sabin et al. (2026)[[27]](../references.md), Figure 2.*
+*Each point is one device fit in one background scene. Left: HASPIv2 vs. mean listener rating (r = 0.83 overall). Right: the listener-rated model on held-out devices (r = 0.92 overall). Reproduced from Sabin et al. (2026)[[27]](../references.md), Figure 2.*
 
 ### Quiet/Moderate vs. Loud Environments
 

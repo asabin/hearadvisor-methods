@@ -14,6 +14,19 @@ Every page also shows its last-updated date with a link to its full edit history
 
 ## Hearing Devices
 
+### August 2026 — Speech Perception Benefit adds listener-rated component
+
+The Speech Perception Benefit score is now the average of two components: the existing HASPIv2-derived intelligibility score and a new machine-learning metric trained on 100,000+ blind consumer ratings collected through the Blind Listening Challenge. The intent is a score influenced half by intelligibility research and half by real user preference. The new component is described in full in [Sabin et al. (2026), arXiv:2606.26342](https://arxiv.org/abs/2606.26342).
+
+**Scores affected:** Yes — speech sub-scores (and therefore SoundScores) were recomputed for all hearing devices.
+
+| Area | Description | Pages |
+|---|---|---|
+| Speech Perception | Published score is now the unweighted mean of the \(\Delta\)HASPIv2 component and a listener-rated ease-of-understanding component predicted by a model trained on Blind Listening Challenge ratings. The listener-rated component is linearly rescaled to match the distribution of the scaled \(\Delta\)HASPIv2 component across all tested devices; both components are bounded below at 1.0 before averaging. | [Speech Perception](hearing-devices/metrics/speech-perception.md) |
+| References | Added Sabin, Taddei, & Bailey (2026), describing the listener-rating dataset and predictive model. | [References](hearing-devices/references.md) |
+
+---
+
 ### July 2026 — Weight correction and normalization documentation
 
 Two corrections and one precision clarification. None changes the methodology as designed; they bring the implementation, presentation, and documentation into line with the published calculations.

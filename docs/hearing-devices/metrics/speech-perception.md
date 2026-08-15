@@ -58,4 +58,4 @@ The published Speech Perception Benefit score is the unweighted mean of the two 
 \text{Speech Perception Benefit} = \frac{\text{Intelligibility} + \text{Listener-rated}}{2}
 \]
 
-Both components are bounded below at 1.0 before averaging, so the published score does not distinguish among devices at the extreme low end of the scale.
+Both components are bounded below at 1.0 before averaging, so the published score does not distinguish among devices at the extreme low end of the scale. There is no upper bound: a device with exceptional benefit can score above 5.

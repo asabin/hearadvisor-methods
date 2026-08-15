@@ -13,7 +13,7 @@ The two components are deliberately different in spirit. HASPIv2 is a model of t
 
 ## Computation
 
-### Intelligibility Component (\(\Delta\)HASPIv2)
+### Intelligibility Component (ΔHASPIv2)
 
 We compute HASPIv2 using the N3 audiogram ([Table 1](../device-settings.md#hearing-loss)) and RAU-transform[[15]](../references.md) the output. We average across both ears and compute the difference between unaided and aided recordings:
 

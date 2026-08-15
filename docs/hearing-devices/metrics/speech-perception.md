@@ -31,7 +31,7 @@ The training data come from our Blind Listening Challenge: over 100,000 quality-
 
 The figure below shows the model's predictions against the mean listener rating for devices that were entirely held out of training. The model tracks consumer ratings closely in both loud and quiet scenes (r = 0.92 overall), substantially better than HASPIv2 on the same data (r = 0.83)[[27]](../references.md):
 
-![Predicted vs. actual listener ratings for the listener-rated model on held-out devices](../assets/fig7-speech-predicted-vs-actual.png)
+![Predicted vs. actual listener ratings for the listener-rated model on held-out devices](../assets/fig7-speech-predicted-vs-actual.png){ width="440" }
 
 *Each point is one device fit in one background scene. Adapted from Sabin et al. (2026)[[27]](../references.md), Figure 2.*
 

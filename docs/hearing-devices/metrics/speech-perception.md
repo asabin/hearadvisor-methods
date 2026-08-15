@@ -29,11 +29,11 @@ The second component is produced by a model trained to predict listener-rated ea
 
 The training data come from our Blind Listening Challenge: over 100,000 quality-screened ratings in which website visitors with hearing loss rated recordings of unlabeled devices on a five-point ease-of-understanding scale. The dataset — 83 commercial products recorded across 72 realistic acoustic scenes — and the model are described in full in Sabin et al. (2026)[[27]](../references.md).
 
-The figure below shows each metric against the mean listener rating. For the proposed model (right), predictions are for devices that were entirely held out of training. The model tracks consumer ratings substantially more closely than HASPIv2 in both loud and quiet scenes:
+The figure below shows the model's predictions against the mean listener rating for devices that were entirely held out of training. The model tracks consumer ratings closely in both loud and quiet scenes (r = 0.92 overall), substantially better than HASPIv2 on the same data (r = 0.83)[[27]](../references.md):
 
-![Predicted vs. actual listener ratings for HASPIv2 and the listener-rated model on held-out devices](../assets/fig7-speech-predicted-vs-actual.png)
+![Predicted vs. actual listener ratings for the listener-rated model on held-out devices](../assets/fig7-speech-predicted-vs-actual.png)
 
-*Each point is one device fit in one background scene. Left: HASPIv2 vs. mean listener rating (r = 0.83 overall). Right: the listener-rated model on held-out devices (r = 0.92 overall). Reproduced from Sabin et al. (2026)[[27]](../references.md), Figure 2.*
+*Each point is one device fit in one background scene. Reproduced from Sabin et al. (2026)[[27]](../references.md), Figure 2.*
 
 ### Quiet/Moderate vs. Loud Environments
 

@@ -46,7 +46,7 @@ We report both components separately for two environment categories:
 
 For each category, we average each component across all qualifying acoustic scenes.
 
-## Mapping to 0--5 Scale
+## Mapping to the 5-Point Scale
 
 The intelligibility component is mapped to our 5-point scale via linear scaling, as in previous versions of this methodology: a \(\Delta\)HASPIv2 of 0 (no benefit relative to the open ear) maps to 0 on our scale, with increasing benefit scaled linearly up to 5.
 

@@ -9,7 +9,7 @@ We quantify the expected improvement in speech understanding for each device/fit
 | Intelligibility (\(\Delta\)HASPIv2) | Predicted speech intelligibility for an impaired auditory system | Peer-reviewed intelligibility research[[14]](../references.md) |
 | Listener-rated ease of understanding | Predicted consumer ratings of how easy speech is to understand | 100,000+ blind ratings from hearing aid consumers[[27]](../references.md) |
 
-The two components are deliberately different in spirit. HASPIv2 is a model of the impaired auditory periphery developed by hearing scientists and validated against objective intelligibility measures — it represents the professional research perspective. The second component is a machine-learning model trained on more than 100,000 ratings collected through our Blind Listening Challenge, in which website visitors with hearing loss rate recordings of unlabeled devices — it represents the perspective of real hearing aid consumers. Averaging the two yields a score informed equally by intelligibility research and by user preference.
+The two components are deliberately different in spirit. HASPIv2 is a model of the impaired auditory periphery developed by hearing scientists and validated against objective intelligibility measures — it represents the professional research perspective. The second component is a machine-learning model trained on more than 100,000 ratings collected through our Blind Listening Challenge, in which website visitors with hearing loss rate recordings of unlabeled devices in terms of ease of understanding — it represents the perspective of real hearing aid consumers. Averaging the two yields a score informed equally by intelligibility research and by user preference.
 
 ## Computation
 

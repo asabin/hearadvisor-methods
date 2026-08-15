@@ -2,7 +2,7 @@
 
 ## Overview
 
-We quantify the expected improvement in speech understanding for each device/fit combination via acoustic measurement. The published score is the average of two complementary components computed on the same recordings:
+We quantify the expected improvement in speech understanding for each device/fit combination via acoustic measurement. The published score is the average of two components computed on the same recordings:
 
 | Component | What it Captures | Grounded In |
 |---|---|---|
@@ -33,7 +33,7 @@ The figure below shows the model's predictions against the mean listener rating 
 
 ![Predicted vs. actual listener ratings for the listener-rated model on held-out devices](../assets/fig7-speech-predicted-vs-actual.png)
 
-*Each point is one device fit in one background scene. Reproduced from Sabin et al. (2026)[[27]](../references.md), Figure 2.*
+*Each point is one device fit in one background scene. Adapted from Sabin et al. (2026)[[27]](../references.md), Figure 2.*
 
 ### Quiet/Moderate vs. Loud Environments
 

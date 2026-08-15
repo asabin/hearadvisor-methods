@@ -41,8 +41,8 @@ We report both components separately for two environment categories:
 
 | Sub-metric | Environment Criterion |
 |---|---|
-| Speech Perception Benefit (Quiet/Moderate, 5 background) | Background level < 70 dB SPL |
-| Speech Perception Benefit (Loud, 7 background) | Background level > 70 dB SPL |
+| Speech Perception Benefit (Quiet/Moderate, 5 backgrounds) | Background level < 70 dB SPL |
+| Speech Perception Benefit (Loud, 7 backgrounds) | Background level > 70 dB SPL |
 
 For each category, we average each component across all qualifying acoustic scenes.
 

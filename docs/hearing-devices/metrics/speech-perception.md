@@ -27,7 +27,7 @@ Positive values indicate the hearing aid improved speech intelligibility; negati
 
 The second component is produced by a model trained to predict listener-rated ease of speech understanding directly from audio. The aided recording and a matched clean-speech reference are each passed through a frozen speech foundation model (the Whisper encoder), and the difference between their internal representations is mapped to a predicted listener rating by a small trained network.
 
-The training data come from our Blind Listening Challenge: over 100,000 quality-screened ratings in which website visitors with hearing loss rated recordings of unlabeled devices on a five-point ease-of-understanding scale. The dataset — 83 commercial products recorded across 72 realistic acoustic scenes — and the model are described in full in Sabin et al. (2026)[[27]](../references.md).
+The training data come from our Blind Listening Challenge: over 100,000 quality-screened ratings in which website visitors with hearing loss rated recordings of unlabeled devices on a five-point ease-of-understanding scale. The dataset — 83 commercial products recorded across 72 realistic acoustic scenes — and the model are described in Sabin et al. (2026)[[27]](../references.md).
 
 The figure below shows the model's predictions against the mean listener rating for devices that were entirely held out of training. The model tracks consumer ratings closely in both loud and quiet scenes (r = 0.92 overall), substantially better than HASPIv2 on the same data (r = 0.83)[[27]](../references.md):
 

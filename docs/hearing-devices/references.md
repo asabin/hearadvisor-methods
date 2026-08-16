@@ -51,3 +51,5 @@
 25. Mueller, H. G. (2017). 20Q: Hearing Aid Verification -- Can You Afford Not To?
 
 26. McShefferty, D., Whitmer, W. M., & Akeroyd, M. A. (2015). The just-noticeable difference in speech-to-noise ratio. *Trends in Hearing, 19*, 2331216515572316.
+
+27. Sabin, A., Taddei, S., & Bailey, A. (2026). A Large-Scale Database and Predictive Model of Listener-Rated Ease of Speech Understanding in Commercial Hearing Aids. *arXiv preprint* [arXiv:2606.26342](https://arxiv.org/abs/2606.26342).

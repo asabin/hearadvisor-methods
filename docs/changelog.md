@@ -24,7 +24,7 @@ The Speech Perception Benefit score is now the average of two components: the ex
 |---|---|---|
 | Speech Perception | Published score is now the unweighted mean of the \(\Delta\)HASPIv2 component and a listener-rated ease-of-understanding component predicted by a model trained on Blind Listening Challenge ratings. The listener-rated component is linearly rescaled to match the distribution of the scaled \(\Delta\)HASPIv2 component across all tested devices; both components are bounded below at 1.0 before averaging. | [Speech Perception](hearing-devices/metrics/speech-perception.md) |
 | References | Added Sabin, Taddei, & Bailey (2026), describing the listener-rating dataset and predictive model. | [References](hearing-devices/references.md) |
-| Results | Refreshed summary statistics following the recompute. The results page now counts the 103 fully evaluated devices listed on hearadvisor.com: average SoundScore 3.8 (was 3.4), with 46 devices (45%) meeting the 4.0 Expert Choice threshold. Because both speech components are bounded below at 1.0, no tested device now grades below C. Earplug metrics are unaffected. | [Devices](hearing-devices/results.md) |
+| Results | Refreshed summary statistics following the recompute. The results page now counts the 109 fully evaluated devices listed on hearadvisor.com: average SoundScore 3.8 (was 3.4), with 48 devices (44%) meeting the 4.0 Expert Choice threshold. Because both speech components are bounded below at 1.0, no tested device now grades below C. Earplug metrics are unaffected. | [Devices](hearing-devices/results.md) |
 
 ---
 

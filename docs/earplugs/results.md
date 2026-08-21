@@ -8,7 +8,7 @@ As of July 2026, this procedure has been conducted on **57 earplug conditions** 
 - **Average sound quality score:** 2.6 (s.d. 1.3)
 - **The two metrics are negatively correlated** (\(r = -0.33\)), indicating a trend toward worse sound quality with increasing loudness reduction. However, the relatively low correlation strength (\(r^2 = 0.11\)) indicates that it is possible to alter one dimension and not the other.
 - **Median SoundScore:** 3.7 (s.d. 0.6)
-- **Expert Choice winners:** 18 conditions (SoundGrade "A") received the Expert Choice award
+- **Expert Choice winners:** 20 conditions (SoundGrade "A") received the Expert Choice award
 
 ### Score Distributions
 
@@ -16,13 +16,13 @@ As of July 2026, this procedure has been conducted on **57 earplug conditions** 
 
 | SoundScore | SoundGrade | SoundGrade (Evaluations) | Loudness Reduction (Evaluations) | Sound Quality (Evaluations) |
 |---|---|---|---|---|
-| 4.0--5.0 (inclusive) | A | 18 (33%) | 32 (58%) | 11 (20%) |
-| 3.0--&lt;4.0 | B | 34 (62%) | 20 (36%) | 8 (15%) |
+| 4.0--5.0 (inclusive) | A | 20 (36%) | 32 (58%) | 11 (20%) |
+| 3.0--&lt;4.0 | B | 32 (58%) | 20 (36%) | 8 (15%) |
 | 2.0--&lt;3.0 | C | 2 (4%) | 3 (5%) | 16 (29%) |
 | 1.0--&lt;2.0 | D | 1 (2%) | 0 (0%) | 17 (31%) |
 | 0.0--&lt;1.0 | F | 0 (0%) | 0 (0%) | 3 (5%) |
 
-SoundGrades are assigned from full-precision calculated scores before display rounding.
+SoundGrades are assigned from SoundScores rounded to one decimal using half-up rounding.
 
 !!! tip "Full Results"
     Detailed per-device results and listening simulations are available at [hearadvisor.com](https://hearadvisor.com).

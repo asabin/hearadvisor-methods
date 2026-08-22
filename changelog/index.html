@@ -1182,10 +1182,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#july-2026-weight-correction-and-normalization-documentation" class="md-nav__link">
+  <a href="#july-2026-weight-correction-normalization-documentation-and-score-rounding" class="md-nav__link">
     <span class="md-ellipsis">
       
-        July 2026 — Weight correction and normalization documentation
+        July 2026 — Weight correction, normalization documentation, and score rounding
       
     </span>
   </a>
@@ -1350,10 +1350,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#july-2026-weight-correction-and-normalization-documentation" class="md-nav__link">
+  <a href="#july-2026-weight-correction-normalization-documentation-and-score-rounding" class="md-nav__link">
     <span class="md-ellipsis">
       
-        July 2026 — Weight correction and normalization documentation
+        July 2026 — Weight correction, normalization documentation, and score rounding
       
     </span>
   </a>
@@ -1452,11 +1452,16 @@
 <td>Added Sabin, Taddei, &amp; Bailey (2026), describing the listener-rating dataset and predictive model.</td>
 <td><a href="../hearing-devices/references/">References</a></td>
 </tr>
+<tr>
+<td>Results</td>
+<td>Refreshed summary statistics following the recompute. The results page now counts the 109 fully evaluated devices listed on hearadvisor.com: average SoundScore 3.8 (was 3.4), with 48 devices (44%) meeting the 4.0 Expert Choice threshold. Because both speech components are bounded below at 1.0, no tested device now grades below C. Earplug metrics are unaffected.</td>
+<td><a href="../hearing-devices/results/">Devices</a></td>
+</tr>
 </tbody>
 </table>
 <hr />
-<h3 id="july-2026-weight-correction-and-normalization-documentation">July 2026 — Weight correction and normalization documentation<a class="headerlink" href="#july-2026-weight-correction-and-normalization-documentation" title="Permanent link">&para;</a></h3>
-<p>Two corrections and one precision clarification. None changes the methodology as designed; they bring the implementation, presentation, and documentation into line with the published calculations.</p>
+<h3 id="july-2026-weight-correction-normalization-documentation-and-score-rounding">July 2026 — Weight correction, normalization documentation, and score rounding<a class="headerlink" href="#july-2026-weight-correction-normalization-documentation-and-score-rounding" title="Permanent link">&para;</a></h3>
+<p>One scoring-weight correction, one normalization clarification, and one score-rounding clarification.</p>
 <p><strong>Scores affected:</strong> Yes — all hearing device SoundScores were recomputed.</p>
 <table>
 <thead>
@@ -1469,7 +1474,7 @@
 <tbody>
 <tr>
 <td>SoundScore</td>
-<td>Corrected an implementation mismatch in which the component weights for "Does Not Squeal" (0.15) and "Own Voice Not Boomy" (0.12) were swapped in the scoring code. Table 2 was and remains correct. Per-fit, across-fit, and SoundScore values were recomputed for every device.</td>
+<td>Corrected the component allocation to match the combined survey weights: 0.15 for "Does Not Squeal" and 0.12 for "Own Voice Not Boomy." Per-fit, across-fit, and SoundScore values were recomputed for every device.</td>
 <td><a href="../hearing-devices/metrics/soundscore/">SoundScore</a></td>
 </tr>
 <tr>
@@ -1479,12 +1484,12 @@
 </tr>
 <tr>
 <td>SoundGrade</td>
-<td>Clarified that grade thresholds apply to full-precision calculated scores before display rounding. The website now reveals additional decimal places only when one-decimal rounding would cross a grade boundary, preventing a score below 4.0 from being displayed as 4.0 beside a B grade.</td>
+<td>Defined the public SoundScore as the calculated score rounded to one decimal using half-up rounding, with SoundGrade and Expert Choice assigned from that same value. A calculated score of 3.95 therefore displays as 4.0 and receives an A.</td>
 <td><a href="../hearing-devices/metrics/soundscore/">Hearing devices</a>, <a href="../earplugs/metrics/soundscore/">Earplugs</a></td>
 </tr>
 <tr>
 <td>Results</td>
-<td>Refreshed summary statistics to the current catalog: 116 hearing devices (was 106) and 57 earplug conditions across 32 earplugs (was 56 across 31). The hearing device SoundGrade distribution reflects the corrected weights and current normalization -- 39 devices now meet the 4.0 Expert Choice threshold, down from 52, and the average SoundScore is 3.4 rather than 3.7. Component metric summaries were refreshed for the expanded hearing-device catalog; all earplug metrics are unchanged.</td>
+<td>Refreshed summary statistics to the current catalog: 117 hearing devices and 57 earplug conditions across 32 earplugs. Under the corrected weights and shared rounding rule, 45 hearing devices and 20 earplug conditions receive an A.</td>
 <td><a href="../hearing-devices/results/">Devices</a>, <a href="../earplugs/results/">Earplugs</a></td>
 </tr>
 </tbody>
@@ -1607,7 +1612,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 14, 2026 17:48:55 UTC">August 14, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 21, 2026 21:19:45 UTC">August 21, 2026</span>
   </span>
 
     

@@ -24,21 +24,22 @@ The Speech Perception Benefit score is now the average of two components: the ex
 |---|---|---|
 | Speech Perception | Published score is now the unweighted mean of the \(\Delta\)HASPIv2 component and a listener-rated ease-of-understanding component predicted by a model trained on Blind Listening Challenge ratings. The listener-rated component is linearly rescaled to match the distribution of the scaled \(\Delta\)HASPIv2 component across all tested devices; both components are bounded below at 1.0 before averaging. | [Speech Perception](hearing-devices/metrics/speech-perception.md) |
 | References | Added Sabin, Taddei, & Bailey (2026), describing the listener-rating dataset and predictive model. | [References](hearing-devices/references.md) |
+| Results | Refreshed summary statistics following the recompute. The results page now counts the 109 fully evaluated devices listed on hearadvisor.com: average SoundScore 3.8 (was 3.4), with 48 devices (44%) meeting the 4.0 Expert Choice threshold. Because both speech components are bounded below at 1.0, no tested device now grades below C. Earplug metrics are unaffected. | [Devices](hearing-devices/results.md) |
 
 ---
 
-### July 2026 — Weight correction and normalization documentation
+### July 2026 — Weight correction, normalization documentation, and score rounding
 
-Two corrections and one precision clarification. None changes the methodology as designed; they bring the implementation, presentation, and documentation into line with the published calculations.
+One scoring-weight correction, one normalization clarification, and one score-rounding clarification.
 
 **Scores affected:** Yes — all hearing device SoundScores were recomputed.
 
 | Area | Description | Pages |
 |---|---|---|
-| SoundScore | Corrected an implementation mismatch in which the component weights for "Does Not Squeal" (0.15) and "Own Voice Not Boomy" (0.12) were swapped in the scoring code. Table 2 was and remains correct. Per-fit, across-fit, and SoundScore values were recomputed for every device. | [SoundScore](hearing-devices/metrics/soundscore.md) |
+| SoundScore | Corrected the component allocation to match the combined survey weights: 0.15 for "Does Not Squeal" and 0.12 for "Own Voice Not Boomy." Per-fit, across-fit, and SoundScore values were recomputed for every device. | [SoundScore](hearing-devices/metrics/soundscore.md) |
 | SoundScore | Documented normalization as a catalog-wide offset equal to 5.0 minus the highest raw across-fit score, recalculated when the leading raw score changes, rather than a permanently fixed +1.1. The offset was +1.1 at first publication; the behavior it describes is unchanged. | [SoundScore](hearing-devices/metrics/soundscore.md) |
-| SoundGrade | Clarified that grade thresholds apply to full-precision calculated scores before display rounding. The website now reveals additional decimal places only when one-decimal rounding would cross a grade boundary, preventing a score below 4.0 from being displayed as 4.0 beside a B grade. | [Hearing devices](hearing-devices/metrics/soundscore.md), [Earplugs](earplugs/metrics/soundscore.md) |
-| Results | Refreshed summary statistics to the current catalog: 116 hearing devices (was 106) and 57 earplug conditions across 32 earplugs (was 56 across 31). The hearing device SoundGrade distribution reflects the corrected weights and current normalization -- 39 devices now meet the 4.0 Expert Choice threshold, down from 52, and the average SoundScore is 3.4 rather than 3.7. Component metric summaries were refreshed for the expanded hearing-device catalog; all earplug metrics are unchanged. | [Devices](hearing-devices/results.md), [Earplugs](earplugs/results.md) |
+| SoundGrade | Defined the public SoundScore as the calculated score rounded to one decimal using half-up rounding, with SoundGrade and Expert Choice assigned from that same value. A calculated score of 3.95 therefore displays as 4.0 and receives an A. | [Hearing devices](hearing-devices/metrics/soundscore.md), [Earplugs](earplugs/metrics/soundscore.md) |
+| Results | Refreshed summary statistics to the current catalog: 117 hearing devices and 57 earplug conditions across 32 earplugs. Under the corrected weights and shared rounding rule, 45 hearing devices and 20 earplug conditions receive an A. | [Devices](hearing-devices/results.md), [Earplugs](earplugs/results.md) |
 
 ---
 
